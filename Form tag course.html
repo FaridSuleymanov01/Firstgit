@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form tag course</title>
+  <style>
+    #FirstName {
+      border-color: red;
+    }
+
+    #LastName {
+      border-color: red;
+    }
+
+    #mailadrs {
+      border-color: rebeccapurple;
+    }
+
+    #salutation {
+      color: darkslateblue;
+      border-color: green;
+    }
+
+    #Bdate {
+      border-color: purple;
+    }
+
+    #tel {
+      width: 175px;
+      border-color: gold;
+    }
+
+    #message {
+      background-color: aquamarine;
+    }
+
+    #adress {
+      background-color: aquamarine;
+    }
+
+    #ich {
+      background-color: gray;
+    }
+
+    #der {
+      background-color: darkgray;
+    }
+
+    #send {
+      background-color: coral;
+    }
+  </style>
+</head>
+
+<body>
+  <fieldset id="ich">
+    <legend id="der"><b>Personal Details</b></legend>
+    <form method="post">
+      <label for="salutation"><b>Salutation</b></label>
+      <br>
+      <select name="salutation" id="salutation">
+        <option value="">--None--</option>
+        <option value="Привет">Привет</option>
+        <option value="Hola">Hola</option>
+        <option value="Hi">Hi</option>
+      </select>
+      <br>
+      <br>
+
+      <label for="FirstName"><b>First Name</b></label>
+      <input type="text" name="FirstName" id="FirstName" placeholder="Enter your first name">
+      <br> <br>
+      <label for="LastName"><b>Last Name:</b></label>
+      <input type="text" name="LastName" id="LastName" placeholder="Enter your last name">
+      <br> <br>
+
+      <label><b>Gender:</b></label>
+      <input type="radio" name="gender" value="Male">Male
+      <input type="radio" name="gender" value="Female">Female
+      <input type="radio" name="gender" value="Other">Other
+      <br> <br>
+
+      <label for="mailadrs"><b>Email:</b></label>
+      <input type="email" name="youremail" id="mailadrs" placeholder="Enter your email">
+      <br> <br>
+      <label for="Bdate"><b>Date of Birth:</b></label>
+      <input type="date" name="birthdate" id="Bdate" placeholder="sss">
+      <br><br>
+
+
+      <label for="tel"><b>Telephone number:</b></label>
+      <input type="tel" name="tel" id="tel" placeholder="Enter your telephone number">
+      <br><br>
+
+      <label><b>Send us a message:</b></label>
+      <br>
+      <textarea name="message" id="message" placeholder="Type your message"></textarea>
+      <br><br>
+
+      <label><b>Adress:</b></label>
+      <br>
+      <textarea name="adress" id="adress" placeholder="Write your adress"></textarea>
+      <br><br>
+      <label for="send"><b>Click the submit button:</b></label>
+      <br>
+      <input type="submit" value="Send your data" id="send">
+
+  </fieldset>
+  </form>
+
+
+</body>
+
+
+</html>
